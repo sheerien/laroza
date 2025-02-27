@@ -43,11 +43,11 @@ pip install -r requirements.txt
 ### Run the Script
 #### Windows
 ```sh
-py script.py Series.inf
+py series.py
 ```
 #### Mac & Linux
 ```sh
-python3 script.py Series.inf
+python3 series.py
 ```
 
 ## Notes
