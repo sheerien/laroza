@@ -34,9 +34,9 @@ pip install -r requirements.txt
 ```
 
 ### Configure the `.env` File
-- Copy the existing `.inf` example file and paste it as `Series.inf`:
+- Copy the existing `.env.example` example file and paste it as `.env`:
   ```sh
-  cp .env.example ..env
+  cp .env.example .env
   ```
 - Modify `.env` with your desired configurations.
 
@@ -53,7 +53,7 @@ python3 series.py
 ## Notes
 - Ensure all required dependencies are installed before running the script.
 - Always activate the virtual environment before executing the script.
-- The `.inf` file contains the necessary configurations for extracting links.
+- The `.env` file contains the necessary configurations for extracting links.
 
 ## Ramadan 2025 Category
 For extracting Ramadan 2025 content, visit:
