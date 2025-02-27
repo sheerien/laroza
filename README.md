@@ -12,7 +12,7 @@ This script allows you to extract movies and series links from the Laroza websit
   ```
 - Navigate to the project directory:
   ```sh
-  cd <repository-folder>
+  cd laroza
   ```
 
 ### Setup Virtual Environment
