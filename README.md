@@ -8,7 +8,7 @@ This script allows you to extract movies and series links from the Laroza websit
 - Install **Python 3.12 or above**
 - Clone the repository using the command:
   ```sh
-  git clone <https://github.com/sheerien/laroza.git>
+  git clone https://github.com/sheerien/laroza.git
   ```
 - Navigate to the project directory:
   ```sh
