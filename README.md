@@ -1,6 +1,6 @@
 # Laroza Movies & Series Extractor
 
-This script allows you to extract movies and series links from the Laroza website.
+This script allows you to extract movies and series links from the [Larosa Ramadan 2025](https://w.laroza.now/category.php?cat=ramadan-2025) website.
 
 ## Usage
 
