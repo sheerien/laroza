@@ -1,3 +1,5 @@
+import re
+from typing import Optional
 from urllib.parse import urlparse
 
 
@@ -59,3 +61,31 @@ def read_data_from_json_file(filename: str) -> dict:
         print(f"Error: File '{filename}' not found.")
         return None
 
+
+def vk_extract_url(original_url: str) -> Optional[str]:
+    """
+    Extracts the URL of the format 'https://vk.com/video<numeric>_<numeric>' 
+    from the given original URL using regular expressions.
+
+    Args:
+        original_url (str): The original URL from which to extract the desired URL.
+
+    Returns:
+        Optional[str]: The extracted URL if found, else None.
+    """
+    try:
+        # Define a regex pattern to match the desired URL format
+        pattern = r"oid=(\d{9}).*id=(\d{9})"
+
+        # Use re.search() to find the pattern in the original URL
+        match = re.search(pattern, original_url)
+
+        # If a match is found, construct and return the extracted URL
+        if match:
+            extracted_url = fr"https://vk.com/video{match.group(1)}_{match.group(2)}"
+            return extracted_url
+        else:
+            return None
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return None

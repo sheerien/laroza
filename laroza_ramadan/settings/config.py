@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     # WeCima_Config
     LAROZA_SITE_NAME: str
     LAROZA_SITE_URL: str
-    LAROZA_SITE_Series_List_URL: str
+    LAROZA_SITE_SERIES_LIST_URL: str
     
 
 def get_settings():
